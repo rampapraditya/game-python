@@ -1,4 +1,5 @@
 import pygame
+import random
 
 # instalasi
 pygame.init()
@@ -11,7 +12,7 @@ height = 600
 screen = pygame.display.set_mode([width, height])
 
 # Mengubah title screen
-pygame.display.set_caption("Tutorial 3")
+pygame.display.set_caption("Tutorial 5")
 
 # memuat dan menggati logo/icon screen
 icon = pygame.image.load("logo.png")
@@ -32,8 +33,8 @@ def musuh(x, y):
 x = 100
 y = 300
 
-x_musuh = 810
-y_musuh = 300
+x_musuh = random.randint(0, 1000) # menentukan posisi random sesuaikan framenya
+y_musuh = random.randint(0, 600)
 
 x_point = 0
 y_point = 0
